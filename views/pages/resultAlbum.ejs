@@ -1,0 +1,33 @@
+<% include header %>
+
+<body style="background-color: #b27a33;">
+
+	<h1> </h1>
+	<a href="http://localhost:8080/index" class="ui button">New Search</a>
+
+<% for(var i=0;i<data.length;i++) { %>
+
+	<div class="ui container" style="padding-top: 20px;background-color: #63605c;">
+		<h1 class="ui horizontal header divider">
+		  <i class="bar chart icon"></i>
+		  <%= data[i].name %>
+		</h1>
+
+		<div style="font-size: 20px;">
+
+		<% for(var j=0;j<data[i].artists.length; j++) { %>
+			<p>Artiste :  <%= data[i].artists[j].name %></p>
+		<% } %>
+		<p>Date de sortie :  <%= data[i].release_date %></p>
+
+		</div>
+
+	</div>
+<% } %>
+
+
+
+</body>
+
+
+</html>

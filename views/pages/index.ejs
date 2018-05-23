@@ -1,0 +1,33 @@
+<% include header %>
+
+<body style="background-color: #b27a33;">
+
+<h5>This little web app give informations about artists or albums using Spotify Web API</h5>
+
+<%= info %>
+
+	<form action="/" method="post" class="ui form" style="padding-top: 10px;">
+
+	<div class="ui action left icon input">
+	  <i class="search icon"></i>
+	  <input type="text" placeholder="artist name" name="artist">
+	  <button type="submit" class="ui teal button">Search</button>
+	</div>
+
+	</form>
+
+
+
+	<form action="/" method="post" class="ui form" style="padding-top: 10px;">
+
+	<div class="ui action left icon input">
+	  <i class="search icon"></i>
+	  <input type="text" placeholder="album name" name="album">
+	  <button type="submit" class="ui teal button">Search</button>
+	</div>
+
+	</form>
+
+</body>
+
+</html>
