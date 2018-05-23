@@ -11,8 +11,6 @@
 
 // Import Node Modules
 let express = require('express')
-let http = require('http')
-let https = require('https')
 var request = require('request')
 var bodyParser = require('body-parser')
 let server = express()
